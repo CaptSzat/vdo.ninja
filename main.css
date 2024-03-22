@@ -64,8 +64,8 @@
 	--codirector-dark-box: rgb(129 127 127);
 
 	/* Original colors */
-	--background-color: #141926;
-	--dark-background-color: #02050c;
+	--background-color: #161616;
+	--dark-background-color: #0e0e0e;
 	--container-color: #373737;
 	--button-color: #2A2A2A;
 	--blue-accent: #4a4c63;
@@ -478,8 +478,8 @@ button.hint {
 }
 #header {
 	width: 100%;
-	padding: 1px;
-	background-color: #0F131D;
+	padding: 5px;
+	background-color: #1a1a1a;
 	color: #FFF;
 	-webkit-app-region: drag;
 }
@@ -4033,10 +4033,21 @@ a#reshare {
 
 #joinroomID {
 	border-radius: 0;
+	color: white;
+	background: rgb(32, 32, 32);
+	border-radius: 10px 0px 0px 10px;
 	padding: 5px;
 }
+
+#joinroomID::placeholder {
+	color: rgb(255, 255, 255) !important;
+	opacity: 1; /* Firefox */
+  }
+
 #joinroomID+button {
 	margin: 0px var(--regular-margin);
+	margin-left: 0px;
+	border-radius: 0px 10px 10px 0px;
 }
 
 #joinbyURL {
